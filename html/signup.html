@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Styles.css">
+    <style>
+
+        body{
+            color: white;
+            margin: auto;
+            background-image: none;
+        }
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 1000px;
+            
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        video {
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            object-fit: cover; 
+        }
+       
+        p {
+            font-size: medium;
+        }
+        .signup-section {
+            margin-top: 40px;
+            margin-bottom: 60px;
+        }
+        .error-message {
+            background-color: rgb(227, 72, 0);
+    display: none; 
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+
+
+
+
+    </style>
+    <title>signup</title>
+</head>
+<body>
+  
+
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="../video/bcsign.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <!-- Header Section -->
+    <header>
+        <div class="logo"><a href="../html/index.html">
+            <img src="../images/logo-travigo.png" alt="logo" height="50px" href="#">
+        </a>
+        </div>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="../html/index.html">home</a></li>
+                    <li><a href="../html/Go.html">GO offers</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="../html/login.html">Login</a></li>
+                    <li><a href="../html/signup.html">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="signup-section">
+            <h2>Sign Up</h2>
+            <form id="signup-form">
+                <label for="First name">First name:</label>
+                <input type="text" id="Firstname" name="firstname" placeholder="your first name"required>
+                <div class="error-message" id="firstNameError">Please enter your first name.</div>
+
+
+
+                <label for="last name">Last name:</label>
+                <input type="text" id="Lastname" name="Lastname" placeholder="your last name"required>
+                <div class="error-message" id="lastNameError">Please enter your last name.</div>
+
+                <label for="phone">Phone number:</label>
+                <input type="integer" id="Phone" name="Phone" placeholder="your phone number" required>
+                <div class="error-message" id="phoneError">Please enter a valide phone number.</div>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <div class="error-message" id="emailError">Please enter a valid email address.</div>
+
+    
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <div class="error-message" id="passwordError">Password must be at least 8 characters long 
+                    and contain at least one uppercase letter, one lowercase letter,
+                     and one digit.</div>
+
+
+                <label>
+                    <input type="checkbox" id="terms" name="terms" />
+                    I agree to the terms and conditions
+                </label>
+                <div class="error-message" id="termsError" style="margin-top:15px">You must agree to the terms and conditions.</div>
+    
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+
+
+
+
+
+    </main>
+
+     <!-- Footer Section -->
+    <footer class="footer">
+        <div><img src="../images/logo-travigo.png" alt=""></div>
+        <p>Contact Us</p>
+        <div class="social-icons">
+            <a href="#" class="social-icon facebook">F</a>
+            <a href="#" class="social-icon twitter">T</a>
+            <a href="#" class="social-icon instagram">I</a>
+        </div>
+        <p>© 2024 Travigo. All rights reserved.</p>
+    </footer>
+
+
+    <script src="../javascript/signUpValidation.js"></script>
+
+
+   
+</body>
+</html>

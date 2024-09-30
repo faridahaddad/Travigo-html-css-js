@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Styles.css">
+    <script src="../javascript/go.js" defer></script>
+    <title>Travigo travel over the world</title>
+    <style>
+        p {
+            font-size: 3ch;
+        
+        }
+        .s1 {
+          
+            align-items: center;
+            justify-content: center;
+        }
+    .supersection {
+        display: flex;
+        background-color: white;
+        border-radius: 20px;
+        opacity: 0.2;
+        
+        z-index: -1;
+
+    }
+    .s1 p {
+        text-shadow: 2px 2px 8px white;
+    }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo"><a href="../html/index.html">
+            <img src="../images/logo-travigo.png" alt="logo" height="50px" href="#">
+        </a>
+        </div>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">home</a></li>
+                    <li><a href="../html/Go.html">GO offers</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="../html/login.html">Login</a></li>
+                    <li><a href="../html/signup.html">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner Section -->
+    <div class="banner">
+        <div class="animationBanner">
+            <div id="just">TRAVEL AROUND THE WORLD</div>
+            <div class="welcometext">
+                <h1>It's time to GO</h1>
+            </div>
+            <div>
+                <button type="submit">Book Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Section -->
+    <main class="card-container">
+        <div class="flip-card" id="card1">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <br>
+                    <h1>10% 
+                        OFF
+                    </h1>
+                </div>
+                <div href="#" class="flip-card-back">
+                    <a><h3>10% OFF</h3></a>
+                    <p> Whene you book 1 month befor your travel
+                        
+                    </p>
+                    <button class="btngo">GO</button>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card" id="card2">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <br>
+                    <h1>20%
+                        OFF
+                    </h1>
+                </div>
+                <div  href="#" class="flip-card-back" >
+                    <h3>20% OFF</h3>
+                    <p>
+                        Whene you book 2 month befor your travel
+                       
+                    </p>
+                    <button class="btngo">GO</button>
+                </div>
+            </div>
+        </div>
+       
+    </main>
+    <br>
+    <section class="supersection">..........................................</section>
+    <section class="s1">
+        <h1>
+            Your Gateway to Affordable Travel!</h1>
+        <br>
+        <p>
+
+            At Travigo, we believe that everyone deserves the opportunity to explore the world, and we’re here to make that dream a reality with unbeatable travel deals..</p>
+        <br>
+        <video  controls height="400" width="900">
+            <source src="../video/travigo video.mp4" type="video/mp4">
+        </video>
+
+    </section>
+    
+
+   
+    <section id="booking-section" class="booking-section">
+        <h2>Book Your Next Trip</h2>
+        <form id="booking-form">
+            <label for="destination">Destination:</label>
+            <select id="destination" name="destination" required>
+                <option value="">Select Destination</option>
+                <option value="paris">Paris</option>
+                <option value="newyork">New York</option>
+                <option value="bangkok">Algeria</option>
+                <option value="bali">Bali</option>
+            </select>
+
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin" required>
+
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout" required>
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" max="10" required>
+
+            <button type="submit">Search</button>
+        </form>
+    </section>
+    <section id="deals-section">
+        <h2>Exclusive Deals</h2>
+        <table>
+            <tr>
+                <th>Destination</th>
+                <th>Price</th>
+                <th>Availability</th>
+            </tr>
+            <tr>
+                <td>Paris</td>
+                <td>$600</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>New York</td>
+                <td>$450</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>Algeria</td>
+                <td>$8000</td>
+                <td>Limited</td>
+            </tr>
+            <tr>
+                <td>Bali</td>
+                <td>$750</td>
+                <td>Sold Out</td>
+            </tr>
+        </table>
+    </section>
+
+   
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div><img src="../images/logo-travigo.png" alt=""></div>
+        <p>Contact Us</p>
+        <div class="social-icons">
+            <a href="#" class="social-icon facebook">F</a>
+            <a href="#" class="social-icon twitter">T</a>
+            <a href="#" class="social-icon instagram">I</a>
+        </div>
+        <p>© 2024 Travigo. All rights reserved.</p>
+    </footer>
+</body>
+</html>
